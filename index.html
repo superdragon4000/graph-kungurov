@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="tabs.js"></script>
 	<script src="main.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Графы</title>
 </head>
 <body>
-	<p>enter columns:</p>
-	<input type="text" id="column">
-	<p>enter rows:</p>
-	<input type="text" id="rows">
-	<br>
-	<button id="inputButton">Submit</button>
+	<header class="tab">
+		<button class="tablinks" onclick="changeTab(event, 'first')" id="defaultOpen">Первое задание</button>
+		<button class="tablinks" onclick="changeTab(event, 'second')">Второе задание</button>
+		<button class="tablinks" onclick="changeTab(event, 'third')">Третье задание</button>
+	</header>
+	<main>
+		<section class="tabcontent" id="first">
+			<h1>Первое задание</h1>
+			<form action="">
+				<p>Введите количество строк:</p>
+				<input class="graph__input" id="rows" type="text" required min="1" value="1">
+				<p>Введите количество столбцов:</p>
+				<input class="graph__input" id="column" type="text" required min="1" value="1">
+				<br>
+				<button class="graph__btn graph__btn-first" id="inputButton">Создать матрицу</button>
+			</form>
+		</section>
+		<section class="tabcontent" id="second">
+			<h1>Второе задание</h1>
+		</section>
+		<section class="tabcontent" id="third">
+			<h1>Третье задание</h1>
+		</section>
+	</main>
 </body>
 </html>
