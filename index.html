@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="tabs.js"></script>
+	<script src="table.js"></script>
 	<script src="main.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -19,13 +20,14 @@
 	<main>
 		<section class="tabcontent" id="first">
 			<h1>Первое задание</h1>
-			<form action="">
+			<form id="form" action="">
 				<p>Введите количество строк:</p>
 				<input class="graph__input" id="rows" type="number" required min="1" value="1">
 				<p>Введите количество столбцов:</p>
-				<input class="graph__input" id="column" type="number" required min="1" value="1">
+				<input class="graph__input" id="columns" type="number" required min="1" value="1">
 				<br>
-				<button class="graph__btn graph__btn-first" id="inputButton">Создать матрицу</button>
+				<!-- <button class="graph__btn graph__btn-first" id="inputButton">Создать матрицу</button> -->
+				<input type="button" class="graph__btn graph__btn-first" id="inputButton" value="Создать матрицу">
 			</form>
 		</section>
 		<section class="tabcontent" id="second">

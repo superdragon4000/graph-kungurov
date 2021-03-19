@@ -1,5 +1,17 @@
+@import "table.css";
+
 body {
   margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+  outline: 1px solid rgb(74, 199, 62);
 }
 
 .tab {
@@ -21,6 +33,11 @@ body {
   background-color: #fff;
   outline: none;
   cursor: pointer;
+}
+
+#form {
+  display: grid;
+  justify-content: center;
 }
 
 .tablinks:hover, .tablinks.active {

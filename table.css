@@ -1,0 +1,17 @@
+.table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.table_td {
+  border: 1px solid #000;
+}
+
+.table_input {
+  padding: 5px;
+  max-width: 4em;
+  border-radius: 0;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
