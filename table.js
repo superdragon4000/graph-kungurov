@@ -1,5 +1,5 @@
-const INPUT_TYPE = "input";
-const TEXT_TYPE = "value";
+// const INPUT_TYPE = "input";
+// const TEXT_TYPE = "value";
 
 function createTable() {
 	let table = document.createElement("table");

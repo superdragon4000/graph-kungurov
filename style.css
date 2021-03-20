@@ -67,7 +67,7 @@ input:focus {
   padding: 10px;
   font-family: 'Montserrat', sans-serif;
   text-transform: lowercase;
-  border: 1px solid rgb(8, 95, 0);
+  border: none;
   cursor: pointer;
   background-color: rgb(74, 199, 62);
   font-weight: 700;
@@ -78,6 +78,22 @@ input:focus {
   background-color: rgb(8, 95, 0);
 }
 
+.graph__btn:focus {
+  outline: 1px solid #000;
+}
+
 .graph__btn-first {
   margin: 15px;
+}
+
+.graph__btn--clear {
+  background-color: rgb(199, 62, 62);
+}
+
+.graph__btn--clear:hover {
+  background-color: rgb(102, 34, 34);
+}
+
+.graph__btn--clear:focus {
+  outline: 1px solid #000;
 }
