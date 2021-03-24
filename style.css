@@ -86,14 +86,18 @@ input:focus {
   margin: 15px;
 }
 
-.graph__btn--clear {
+.graph__btn--delete {
   background-color: rgb(199, 62, 62);
 }
 
-.graph__btn--clear:hover {
+.graph__btn--delete:hover {
   background-color: rgb(102, 34, 34);
 }
 
-.graph__btn--clear:focus {
+.graph__btn--delete:focus {
   outline: 1px solid #000;
+}
+
+.graph__btn--check:disabled {
+  background-color: rgb(199, 199, 199);
 }

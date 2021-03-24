@@ -1,7 +1,7 @@
 // const INPUT_TYPE = "input";
 // const TEXT_TYPE = "value";
 
-function createTable() {
+function createTable(id) {
 	let table = document.createElement("table");
 	let rows = document.getElementById("rows").value;
 	let columns = document.getElementById("columns").value;
@@ -9,6 +9,7 @@ function createTable() {
 		table.append(createTableRow(columns));
 	}
   table.className = "table";
+	table.setAttribute("id", id)
 	return table;
 }
 
