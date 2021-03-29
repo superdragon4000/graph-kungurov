@@ -1,103 +1,13 @@
-@import "table.css";
+@import "tabs/tabs.css";
+@import "input/input.css";
+@import "button/button.css";
+@import "matrix/matrix.css";
 
 body {
   margin: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-input:focus {
-  outline: 1px solid rgb(74, 199, 62);
-}
-
-.tab {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  overflow: hidden;
-  padding: 1em;
-}
-
-.tablinks {
-  color: #000;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  text-transform: lowercase;
-  margin: 10px;
-  padding: 14px 16px;
-  border: 1px solid #000;
-  background-color: #fff;
-  outline: none;
-  cursor: pointer;
-}
-
 #form {
   display: grid;
   justify-content: center;
-}
-
-.tablinks:hover, .tablinks.active {
-  color: #fff;
-  background-color: #000;
-}
-
-.tabcontent {
-  display: none;
-  text-align: center;
-  padding: 6px 12px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
-
-.graph__input {
-  padding: 5px;
-  background-color: #fff;
-  border-radius: 0;
-  border: 1px solid #000;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-}
-
-.graph__btn {
-  color: #fff;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: lowercase;
-  border: none;
-  cursor: pointer;
-  background-color: rgb(74, 199, 62);
-  font-weight: 700;
-}
-
-.graph__btn:hover {
-  color: #fff;
-  background-color: rgb(8, 95, 0);
-}
-
-.graph__btn:focus {
-  outline: 1px solid #000;
-}
-
-.graph__btn-first {
-  margin: 15px;
-}
-
-.graph__btn--delete {
-  background-color: rgb(199, 62, 62);
-}
-
-.graph__btn--delete:hover {
-  background-color: rgb(102, 34, 34);
-}
-
-.graph__btn--delete:focus {
-  outline: 1px solid #000;
-}
-
-.graph__btn--check:disabled {
-  background-color: rgb(199, 199, 199);
 }

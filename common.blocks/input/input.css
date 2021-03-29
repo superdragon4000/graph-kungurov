@@ -1,0 +1,18 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+  outline: 1px solid rgb(74, 199, 62);
+}
+
+.graph__input {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
