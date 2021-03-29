@@ -8,6 +8,6 @@ body {
 }
 
 #form {
-  display: grid;
+  display: flex;
   justify-content: center;
 }

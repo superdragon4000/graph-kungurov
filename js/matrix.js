@@ -1,3 +1,7 @@
+function readMatrix(id) {
+	let matrix = document.getElementById("id");
+}
+
 function createMatrix(id) {
 	let matrix = document.createElement("table");
 	let rows = document.getElementById("rows").value;
