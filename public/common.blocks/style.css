@@ -1,0 +1,13 @@
+@import "tabs/tabs.css";
+@import "input/input.css";
+@import "button/button.css";
+@import "matrix/matrix.css";
+
+body {
+  margin: 0;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/tabs.js"></script>
+	<script src="js/matrix.js"></script>
+	<script src="js/tasks/first_task.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="common.blocks/style.css">
+	<title>Графы</title>
+</head>
+<body>
+	<header class="tab">
+		<button class="tablinks" onclick="changeTab(event, 'a__tab')" id="defaultOpen">Задание A</button>
+		<button class="tablinks" onclick="changeTab(event, 'b__tab')">Задание B</button>
+		<button class="tablinks" onclick="changeTab(event, 'c__tab')">Задание C</button>
+		<button class="tablinks" onclick="changeTab(event, 'd__tab')">Задание D</button>
+		<button class="tablinks" onclick="changeTab(event, 'e__tab')">Задание E</button>
+		<button class="tablinks" onclick="changeTab(event, 'f__tab')">Задание F</button>
+		<button class="tablinks" onclick="changeTab(event, 'l__tab')">Задание L</button>
+	</header>
+	<main>
+		<section class="tabcontent" id="a__tab">
+			<h1>Задание A</h1>
+			<p>По заданной квадратной матрице n×n из нулей <br>и единиц определите, может ли данная матрица быть <br>матрицей смежности простого неориентированного графа.</p>
+			<form id="form" action="">
+				<div>
+					<p>Введите количество строк:</p>
+					<input class="graph__input" id="rows" type="number" required min="1" max="30" value="1">
+					<p>Введите количество столбцов:</p>
+					<input class="graph__input" id="columns" type="number" required min="1" max="30" value="1">
+					<br>
+					<!-- <button class="graph__btn graph__btn-first" id="inputButton">Создать матрицу</button> -->
+					<input type="button" class="graph__btn graph__btn-first" id="create_button__first" value="Создать матрицу">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__first" value="Проверить">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" id="delete_button__first" value="Удалить матрицу">
+				</div>
+			</form>
+		</section>
+		<section class="tabcontent" id="b__tab">
+			<h1>Задание B</h1>
+		</section>
+		<section class="tabcontent" id="c__tab">
+			<h1>Задание C</h1>
+		</section>
+		<section class="tabcontent" id="d__tab">
+			<h1>Задание D</h1>
+		</section>
+		<section class="tabcontent" id="e__tab">
+			<h1>Задание E</h1>
+		</section>
+		<section class="tabcontent" id="f__tab">
+			<h1>Задание F</h1>
+		</section>
+		<section class="tabcontent" id="l__tab">
+			<h1>Задание L</h1>
+		</section>
+	</main>
+</body>
+</html>
