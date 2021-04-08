@@ -1,10 +1,19 @@
-// function readMatrix(id) {
-//   const matrix = document.getElementById('id');
-// }
+function getCellValues(id) {
+  const table = document.getElementById(id);
+  const output = [];
+  for (let r = 0, n = table.rows.length; r < n; r += 1) {
+    output.push([]);
+    for (let c = 0, m = table.rows[r].cells.length; c < m; c += 1) {
+      output[r].push(table.rows[r].cells[c].children[0].value);
+    }
+  }
+  return output;
+}
 
-function createElement(value) {
+function createElement(id, value) {
   const result = document.createElement('span');
   result.value = value;
+  result.setAttribute('id', id);
   result.innerHTML = value;
   return result;
 }

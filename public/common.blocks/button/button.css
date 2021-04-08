@@ -34,6 +34,10 @@
   outline: 1px solid #000;
 }
 
+.graph__btn--delete:disabled {
+  background-color: rgb(199, 199, 199);
+}
+
 .graph__btn--check:disabled {
   background-color: rgb(199, 199, 199);
 }
