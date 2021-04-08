@@ -5,7 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="js/tabs.js"></script>
 	<script src="js/matrix.js"></script>
+	<script src="js/ribs.js"></script>
 	<script src="js/tasks/first_task.js"></script>
+	<script src="js/tasks/b.js"></script>
+	<script src="js/tasks/c.js"></script>
+	<script src="js/tasks/d.js"></script>
+	<script src="js/tasks/e.js"></script>
+	<script src="js/tasks/f.js"></script>
 	<script src="js/main.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -33,7 +39,6 @@
 					<p>Введите количество столбцов:</p>
 					<input class="graph__input" id="columns" type="number" required min="1" max="30" value="1">
 					<br>
-					<!-- <button class="graph__btn graph__btn-first" id="inputButton">Создать матрицу</button> -->
 					<input type="button" class="graph__btn graph__btn-first" id="create_button__first" value="Создать матрицу">
 					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__first" value="Проверить">
 					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" disabled id="delete_button__first" value="Удалить матрицу">
@@ -42,18 +47,79 @@
 		</section>
 		<section class="tabcontent" id="b__tab">
 			<h1>Задание B</h1>
+			<p>По заданной матрице смежности неориентированного графа определите, содержит ли он петли.</p>
+			<form action="">
+				<div>
+					<p>Введите количество строк:</p>
+					<input class="graph__input" id="rows_b" type="number" required min="1" max="30" value="1">
+					<p>Введите количество столбцов:</p>
+					<input class="graph__input" id="columns_b" type="number" required min="1" max="30" value="1">
+					<br>
+					<input type="button" class="graph__btn graph__btn-first" id="create_button__b" value="Создать матрицу">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__b" value="Проверить">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" disabled id="delete_button__b" value="Удалить матрицу">
+				</div>
+			</form>
 		</section>
 		<section class="tabcontent" id="c__tab">
 			<h1>Задание C</h1>
+			<p>Простой неориентированный граф задан матрицей смежности. Найдите количество ребер в графе.</p>
+			<form action="">
+				<div>
+					<p>Введите количество строк:</p>
+					<input class="graph__input" id="rows_c" type="number" required min="1" max="30" value="1">
+					<p>Введите количество столбцов:</p>
+					<input class="graph__input" id="columns_c" type="number" required min="1" max="30" value="1">
+					<br>
+					<input type="button" class="graph__btn graph__btn-first" id="create_button__c" value="Создать матрицу">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__c" value="Проверить">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" disabled id="delete_button__c" value="Удалить матрицу">
+				</div>
+			</form>
 		</section>
 		<section class="tabcontent" id="d__tab">
 			<h1>Задание D</h1>
+			<p>Ориентированный граф задан матрицей смежности. Найдите количество ребер в графе.</p>
+			<form action="">
+				<div>
+					<p>Введите количество строк:</p>
+					<input class="graph__input" id="rows_d" type="number" required min="1" max="30" value="1">
+					<p>Введите количество столбцов:</p>
+					<input class="graph__input" id="columns_d" type="number" required min="1" max="30" value="1">
+					<br>
+					<input type="button" class="graph__btn graph__btn-first" id="create_button__d" value="Создать матрицу">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__d" value="Проверить">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" disabled id="delete_button__d" value="Удалить матрицу">
+				</div>
+			</form>
 		</section>
 		<section class="tabcontent" id="e__tab">
 			<h1>Задание E</h1>
+			<p>Простой неориентированный граф задан матрицей смежности, выведите его представление в виде списка ребер.</p>
+			<form action="">
+				<div>
+					<p>Введите количество строк:</p>
+					<input class="graph__input" id="rows_e" type="number" required min="1" max="30" value="1">
+					<p>Введите количество столбцов:</p>
+					<input class="graph__input" id="columns_e" type="number" required min="1" max="30" value="1">
+					<br>
+					<input type="button" class="graph__btn graph__btn-first" id="create_button__e" value="Создать матрицу">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__e" value="Вывод:">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" disabled id="delete_button__e" value="Удалить матрицу">
+				</div>
+			</form>
 		</section>
 		<section class="tabcontent" id="f__tab">
 			<h1>Задание F</h1>
+			<p>Простой неориентированный граф задан списком ребер, выведите его представление в виде матрицы смежности.</p>
+			<form action="">
+				<p>Введите количество ребер:</p>
+					<input class="graph__input" id="rows_f" type="number" required min="1" max="30" value="1">
+					<br>
+					<input type="button" class="graph__btn graph__btn-first" id="create_button__f" value="Создать список">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--check" disabled id="check_button__f" value="Вывод:">
+					<input type="button" class="graph__btn graph__btn-first graph__btn--delete" disabled id="delete_button__f" value="Удалить список">
+			</form>
 		</section>
 		<section class="tabcontent" id="l__tab">
 			<h1>Задание L</h1>
