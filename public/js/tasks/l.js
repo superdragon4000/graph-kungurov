@@ -1,32 +1,34 @@
-function adjToRibs(id) {
+function rate(id) {
   const matrix = getCellValues(id);
   let output = [];
+  for (let h = 0; h < matrix.length; h += 1) {
+    output[h] = 0;
+  }
   for (let i = 0; i < matrix.length; i += 1) {
-    output.push([]);
     for (let j = 0; j < matrix[i].length; j += 1) {
       if (+matrix[i][j] === 1) {
-        output[i].push(i + 1, j + 1);
+        output[i] += 1;
       }
     }
   }
-  return createRibs('adj', output.length, 2, output);
+  return output;
 }
 
-function e() {
-  const rows = document.getElementById('rows_e');
-  const columns = document.getElementById('columns_e');
+function l() {
+  const rows = document.getElementById('rows_l');
+  const columns = document.getElementById('columns_l');
 
-  const tab = document.getElementById('e__tab');
-  const id = 'e_matrix';
+  const tab = document.getElementById('l__tab');
+  const id = 'l_matrix';
   tab.querySelector('form');
 
-  const buttonCreate = document.getElementById('create_button__e');
-  const buttonCheck = document.getElementById('check_button__e');
-  const buttonDelete = document.getElementById('delete_button__e');
+  const buttonCreate = document.getElementById('create_button__l');
+  const buttonCheck = document.getElementById('check_button__l');
+  const buttonDelete = document.getElementById('delete_button__l');
   const outputId = 'ribs';
 
   const listenerCheck = function () {
-    tab.append(adjToRibs(id));
+    tab.append(createElement(outputId, rate(id)));
     buttonCheck.removeEventListener('click', listenerCheck, false);
   };
 
