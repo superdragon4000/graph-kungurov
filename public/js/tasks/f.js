@@ -1,7 +1,28 @@
 function ribsToAdj(id) {
   const matrix = getCellValues(id);
-
-  return output;
+  let adj = [];
+  let max = 0;
+  for (let i = 0; i < matrix.length; i += 1) {
+    for (let j = 0; j < matrix[i].length; j += 1) {
+      if (matrix[i][j] > max) {
+        max = +matrix[i][j];
+      }
+    }
+  }
+  for (let z = 0; z < max; z += 1) {
+    adj.push([]);
+    for (let x = 0; x < max; x += 1) {
+      adj[z][x] = 0;
+    }
+  }
+  let i = 0;
+  let j = 0;
+  for (let h = 0; h < matrix.length; h += 1) {
+    i = +matrix[h][0];
+    j = +matrix[h][1];
+    adj[i-1][j-1] = 1;
+  }
+  return createRibs('adjaced', max, max, adj);
 }
 
 function f() {
@@ -17,7 +38,7 @@ function f() {
   const outputId = 'ribs';
 
   const listenerCheck = function () {
-    tab.append(createElement(outputId, ribsToAdj(id)));
+    tab.append(ribsToAdj(id));
     buttonCheck.removeEventListener('click', listenerCheck, false);
   };
 
